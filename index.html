@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>USE TEMPERATURE CONVERTER</h1>
+        <div class="value">
+            <div class="value-inp">
+                <label for="degree">Enter value :</label>
+                <input type="number" name="degree" id="enter-value" required>
+            </div>
+            <div class="select-type">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="celcius">Celcius</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="last">
+            <label for="result">Result :</label>
+            <div id="ans"></div>
+        </div>
+        <div class="seven">
+            <h4>All Rights Reserved 2021-22, Designed by SainiTech.com</h4>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: rgba(22, 42, 50, 0.534);
+    display: flex;
+    color: black;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.main h1 {
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    background-color: aliceblue;
+    padding: 2%;
+    letter-spacing: 2px;
+}
+.value {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.value-inp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.select-type {
+    display: flex;
+    gap: 10px;
+}
+.select-type div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+#ans,
+#enter-value {
+    width: 100%;
+    font-size: 3rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(41, 28, 28);
+    font-weight: 600;
+}
+#btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(30, 52, 69, 0.758);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(41, 28, 28);
+    font-weight: 900;
+}
+#btn:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 24, 24);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#type1,
+#type2 {
+    font-size: 1.5rem;
+    border: 2px solid rgb(0, 0, 0);;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    outline: none;
+    padding: 4% 5%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(41, 28, 28);
+}
+label {
+    font-size: 2rem;
+}
+@media only screen and (max-width:700px){
+    *{
+        font-size: 0.5rem;
+    }
+    .main h1{
+        font-size: 2rem;
+    }
+    .select-type{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:350px){
+    #enter-value, #ans {
+        font-size: 1rem;
+        margin: 5%;
+        padding: 5px;
+    }
+    .main h1{
+        font-size: 1.5rem;
+    }
+}
+.seven{
+    /* background-color: rgb(0, 0, 0); */
+    text-align: center;
+}
+.seven h4{
+    color: rgb(255, 255, 255);
+    /* padding: 0.7% 0%; */
+}
